@@ -1,5 +1,4 @@
-import getPokemonCardColor from "@/service/getPokemonCardColor";
-import getPokemonColor from "@/service/getPokemonColor";
+import getPokemonColor from "../service/getPokemonColor";
 import Image from "next/image";
 
 const PokeCard = ({ pokemonData }) => {
@@ -7,7 +6,7 @@ const PokeCard = ({ pokemonData }) => {
   const pokemonImage =
     pokemonData.sprites.other["official-artwork"].front_default;
 
-  console.log(getPokemonColor(pokemonData.types[0].type.name), "COLOR");
+  console.log(getPokemonColor(pokemonData.types[0].type.gitname), "COLOR");
   console.log(pokemonData.types, "TYPES");
 
   return (
