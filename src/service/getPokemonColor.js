@@ -1,4 +1,5 @@
-export const getPokemonColor = (type) => {
+const getPokemonColor = (type) => {
+  console.log(type);
   if (type === "normal") {
     return "text-zinc-400";
   } else if (type === "fire") {
@@ -37,3 +38,5 @@ export const getPokemonColor = (type) => {
     return "text-rose-300";
   }
 };
+
+export default getPokemonColor;
