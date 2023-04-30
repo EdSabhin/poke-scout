@@ -12,8 +12,9 @@ export default function Home() {
   useEffect(() => {
     clearTimeout(inputSearch.current);
     inputSearch.current = setTimeout(() => {
-      pokemonName.length && fetchPokemon(pokemonName).then(setPokemonData);
-    }, 900);
+      pokemonName.length &&
+        fetchPokemon(pokemonName.toLowerCase()).then(setPokemonData);
+    }, 1100);
   }, [pokemonName]);
 
   return (

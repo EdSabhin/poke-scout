@@ -10,11 +10,11 @@ const PokeCard = ({ pokemonData }) => {
   console.log(pokemonData.types, "TYPES");
 
   return (
-    <div className="w-full lg:h-[23rem] flex justify-center items-center card lg:card-side bg-zinc-100">
-      <div className="w-[52%] bg-red-500 rounded-l-2xl">
+    <div className="w-full lg:h-[25rem] flex justify-center items-center card lg:card-side bg-zinc-100">
+      <div className="w-[52%] flex justify-center bg-red-500 rounded-l-2xl">
         <Image
-          width={250}
-          height={250}
+          width={375}
+          height={375}
           src={pokemonImage}
           alt="Album"
           className="pl-6"

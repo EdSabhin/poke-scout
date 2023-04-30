@@ -1,0 +1,4 @@
+- condition for repeated abilities
+- create pokeball
+- create pokemon submenus
+- add autocomplete to searchBar
